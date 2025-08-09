@@ -1,0 +1,159 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("https://i.imgur.com/Lpjeb84.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 1rem;
+}
+
+h2,
+h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: gray;
+  border-bottom: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+#titleHeader {
+  font-family: "Tinos", serif;
+  font-weight: 200;
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.linksHeader {
+  display: flex;
+  gap: 1rem;
+  font-size: 12pt;
+}
+
+.linksHeader > p > a:hover,
+.mobileMenu > p > a:hover {
+  border-bottom: 1px solid white;
+}
+
+.linksHeader > p > a:active {
+  border-bottom: none;
+}
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  gap: 1rem;
+  width: 75%;
+}
+
+.webjornalism > div > img {
+  width: 100%;
+}
+
+.guiaGenero > p,
+.marciaBarbosa > p,
+.spotifyConfort > p,
+.meArt > p {
+  display: flex;
+  position: relative;
+  top: -3rem;
+  background-color: white;
+}
+
+#mainLinks {
+  color: black;
+  font-weight: 400;
+  padding: 0.4rem 0.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .mobileLinksHeader {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    width: 120%;
+  }
+
+  #titleHeader {
+    width: 13rem;
+  }
+
+  .linksHeader {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  main {
+    width: 90%;
+  }
+}
+
+#menu {
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu:hover {
+  transition: color 0.5s ease;
+  color: #c0c0c0;
+}
+
+#menu:active {
+  transition: none;
+  color: white;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  text-align: right;
+  padding: 1.28rem 3rem 0 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-image: url("https://i.imgur.com/Lpjeb84.jpeg");
+  height: 100vh;
+  width: 20%;
+  z-index: 1;
+}
