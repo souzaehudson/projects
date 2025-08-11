@@ -15,7 +15,8 @@ const album = [
   "https://i.imgur.com/GmoJTdZ.jpeg",
   "https://i.imgur.com/oyRASx0.jpeg",
   "https://i.imgur.com/GmoJTdZ.jpeg",
-  "https://i.imgur.com/gmuEI0n.jpeg"
+  "https://i.imgur.com/gmuEI0n.jpeg",
+  "https://i.imgur.com/mc6utFt.jpeg"
 ]
 
 function showLinksMobile() {
