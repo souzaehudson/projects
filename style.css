@@ -74,7 +74,12 @@ main {
   width: 75%;
 }
 
+.webjornalism > div {
+  width: 30rem;
+}
+
 .webjornalism > div > img {
+  border-radius: 0.4rem;
   width: 100%;
 }
 
@@ -83,9 +88,11 @@ main {
 .spotifyConfort > p,
 .meArt > p {
   display: flex;
+  justify-content: center;
   position: relative;
   top: -3rem;
   background-color: white;
+  border-radius: 0 0 0.4rem 0.4rem;
 }
 
 #mainLinks {
@@ -97,10 +104,11 @@ main {
 .radio > div {
   display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
   color: black;
   background-color: #f1f3f4;
   border-radius: 2rem;
+  margin: 0 0 2rem 0;
 }
 
 .radio > div > img {
@@ -114,6 +122,33 @@ main {
   margin: 0;
   width: 17rem;
 }
+
+.movie {
+  margin: 2rem 0 2.5rem 0;
+  width: 25rem;
+}
+
+.relatorioDeAnomalia {
+  width: 30rem;
+  height: 13.63rem;
+}
+
+#movie {
+  width: 100%;
+  height: 14rem; 
+}
+
+.photos> div > img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.photos> div > p {
+  color: white;
+  font-weight: 400;
+  padding: 0.4rem 0.4rem;
+  margin: 0 0 1rem 0;
+} 
 
 @media screen and (min-width: 800px) {
   .mobileLinksHeader {
@@ -144,6 +179,10 @@ main {
 
   main {
     width: 90%;
+  }
+
+  .webjornalism > div {
+    width: 100%;
   }
 }
 
