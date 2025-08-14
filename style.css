@@ -8,6 +8,7 @@ body {
   background-attachment: fixed;
   height: 100vh;
   padding: 1rem;
+  margin: 0 4rem;
 }
 
 h2,
@@ -182,8 +183,8 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    width: 120%;
+  body {
+    margin: 0 2rem;
   }
 
   #titleHeader {
